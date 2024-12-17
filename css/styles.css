@@ -15,6 +15,10 @@ p {
   margin-bottom: 0;
 }
 
+label {
+  font-family: inherit;
+}
+
 span {
   color: #2e2f42;
 }
@@ -469,4 +473,56 @@ li .cont-exp {
   left: 0;
   bottom: -1px;
   width: 100%;
+}
+
+.btn-subscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  align-items: center;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+  min-width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+}
+
+.svg-btn {
+  fill: #fff;
+}
+
+.wrap-input {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+
+.subscribe-footer {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+}
+
+.subscribe-label {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.subscribe-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
