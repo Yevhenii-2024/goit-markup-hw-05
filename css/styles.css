@@ -511,6 +511,7 @@ li .cont-exp {
 }
 
 .subscribe-label {
+  display: block;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -526,6 +527,7 @@ li .cont-exp {
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: transparent;
+  outline: none;
   color: #fff;
 }
 
@@ -551,7 +553,6 @@ li .cont-exp {
   opacity: 0;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   background: rgba(46, 47, 66, 0.4);
 }
 
@@ -604,10 +605,10 @@ li .cont-exp {
 }
 
 .modal-label {
-  font-family: "Roboto", sans-serif;
+  display: block;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.16;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
@@ -619,8 +620,9 @@ li .cont-exp {
 
 .svg-input {
   position: absolute;
-  top: 8px;
+  top: 50%;
   left: 16px;
+  transform: translateY(-50%);
 }
 
 .modal-input {
@@ -629,4 +631,5 @@ li .cont-exp {
   width: 360px;
   height: 40px;
   padding-left: 38px;
+  outline: none;
 }
