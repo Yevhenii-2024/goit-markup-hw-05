@@ -479,7 +479,7 @@ li .cont-exp {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: inherit;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -573,4 +573,60 @@ li .cont-exp {
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
   overflow-y: auto;
+}
+
+.btn-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn-close-svg {
+  fill: #2e2f42;
+}
+
+.modal-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+.modal-label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 4px;
+}
+
+.cont-input {
+  position: relative;
+}
+
+.svg-input {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.modal-input {
+  border: 1px solid #2e2f4266;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding-left: 38px;
 }
