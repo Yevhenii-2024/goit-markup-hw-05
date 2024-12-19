@@ -539,29 +539,28 @@
           </ul>
         </div>
         <div class="subscribe-footer">
+          <p class="subscribe-label">Subscribe</p>
           <form class="wrap-input">
-            <label class="subscribe-label" for="subscribe-input"
-              >Subscribe</label
-            >
-
-            <input
-              type="email"
-              name="user-email"
-              id="subscribe-input"
-              placeholder="E-mail"
-              class="subscribe-input"
-            />
+            <label for="subscribe-input">
+              <input
+                type="email"
+                name="user-email"
+                id="subscribe-input"
+                placeholder="E-mail"
+                class="subscribe-input"
+              />
+            </label>
+            <button type="submit" class="btn-subscribe">
+              Subscribe
+              <svg width="24" height="24" class="svg-btn">
+                <use href="./images/icons.svg#frame"></use>
+              </svg>
+            </button>
           </form>
-          <button type="submit" class="btn-subscribe">
-            Subscribe
-            <svg width="24" height="24" class="svg-btn">
-              <use href="./images/icons.svg#frame"></use>
-            </svg>
-          </button>
         </div>
       </div>
     </footer>
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay">
       <div class="modal">
         <button type="button" class="btn-close">
           <svg class="btn-close-svg" width="8" height="8">
@@ -586,7 +585,7 @@
             </div>
           </div>
           <div class="cont-form">
-            <label for="user-phone" class="modal-label">Phone</label>
+            <label for="-phone" class="modal-label">Phone</label>
             <div class="cont-input">
               <input
                 type="tel"

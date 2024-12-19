@@ -500,18 +500,16 @@ li .cont-exp {
 
 .wrap-input {
   display: flex;
-  flex-direction: column;
-  margin-left: 80px;
+  gap: 24px;
 }
 
 .subscribe-footer {
   display: flex;
-  align-items: flex-end;
-  gap: 24px;
+  flex-direction: column;
+  margin-left: 80px;
 }
 
 .subscribe-label {
-  display: block;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -711,7 +709,7 @@ li .cont-exp {
 .checkbox-label {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
