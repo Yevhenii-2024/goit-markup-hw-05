@@ -477,7 +477,7 @@ li .cont-exp {
 
 .btn-subscribe {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -496,6 +496,7 @@ li .cont-exp {
 
 .svg-btn {
   fill: #fff;
+  margin-left: 16px;
 }
 
 .wrap-input {
