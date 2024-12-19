@@ -552,12 +552,15 @@ li .cont-exp {
   justify-content: center;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: hidden;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: rgba(46, 47, 66, 0.4);
 }
 
 .modal-overlay.is-open {
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
 }
 
@@ -574,6 +577,7 @@ li .cont-exp {
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
   overflow-y: auto;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-close {
@@ -583,19 +587,25 @@ li .cont-exp {
   width: 24px;
   height: 24px;
   border-radius: 50%;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   fill: #2e2f42;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-close-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-close:hover,
 .btn-close:focus {
   fill: #fff;
+  border: none;
   background-color: #404bbf;
 }
 
@@ -614,7 +624,7 @@ li .cont-exp {
   display: block;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
